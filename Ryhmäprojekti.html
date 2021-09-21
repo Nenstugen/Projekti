@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</style>
+<link rel="stylesheet" href="css.css">
+
+<title>...</title>
+<body>
+
+
+
+
+	
+	
+	<div class="inner-container">
+	
+	
+	<div class="video">
+<video autoplay muted loop id="myVideo">
+  <source src="roma.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+</div>
+
+	<ul class="topnav">
+	<li><a id="Autot" href="#autot">Autot</a></li>
+  <li><a id="Info" href="#info">Info</a></li>
+  <li><a id="yhteystieto" href="#news">Yhteystiedot</a></li>
+</ul>
+	
+	
+	<img src="logo.png">
+	
+	
+	</div>
+	
+	
+
+
+
+
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">Aventador SVJ</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Lamborghini Huracan STO</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Ferrari Roma</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+
+
+
+<div class="autotext">
+
+<div class=item1> 
+<img src="berlinetta.jpg">
+
+<div class=item2>   
+
+<h2> Ferrari Berlinetta F12 </h2>
+<p> Power: 730 hp at 8,250 RPM. </p>
+<p> Torque: 509 lb-ft at 6,000 RPM. </p>
+<p> Top Speed: 211 mph. </p>
+<p> 0-62 mph: 3.1 seconds. </p>
+<p> Transmission: 7-speed dual-clutch with shortened gear ratios. </p>
+
+
+</div>
+</div>
+
+<div class=item3> 
+<img src="DB11.jpg">
+
+<div class=item4>   
+
+<h2> Aston Martin DB11 </h2>
+<p> Power. 630 hp @ 6500 rpm. </p>
+<p> Torque. 516 lb-ft @ 1500 rpm. </p>
+<p> Displacement. 318 in3, 5204 cm3 </p>
+<p> ENGINE TYPE. twin-turbocharged and intercooled DOHC 48-valve V-12, aluminum block and heads, port fuel injection. </p>
+
+
+</div>
+</div>
+
+<div class=item5> 
+<img src="TurboS.jpg">
+
+<div class=item6>   
+
+<h2> Porsche 911 Turbo S </h2>
+<p> Power. 640 hp @ 6750 rpm. </p>
+<p> Torque. 590 lb-ft @ 2400 rpm </p>
+<p> Displacement. 229 in3, 3746 cm3 </p>
+<p> ENGINE TYPE. twin-turbocharged and intercooled DOHC 24-valve flat-6, aluminum block and heads, direct fuel injection. </p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</body>
+</html>
